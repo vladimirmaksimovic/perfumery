@@ -131,7 +131,7 @@ main .dobrodosli {
   text-align: center;
 
   /* stilovi pozadine */
-  background-image: url(./img/pexels-pixabay-264950.jpg);
+  background-image: url(../img/pexels-pixabay-264950.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +141,6 @@ main .dobrodosli {
 main h1 {
   /* google fonts stilovi */
   font-family: "Love Light", cursive;
-
   color: var(--black);
 }
 
@@ -212,7 +211,7 @@ main a:hover {
   justify-content: center;
 
   /* stilovi pozadine */
-  background-image: url(./img/pexels-ron-lach-10537090.jpg);
+  background-image: url(../img/pexels-ron-lach-10537090.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
