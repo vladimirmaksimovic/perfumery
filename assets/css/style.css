@@ -1,0 +1,311 @@
+/**
+  * CSS CONTENT:
+  * 1. Variables
+  * 2. Global Styles
+  * 2.1 CSS Reset
+  */
+
+/*** Variables ***/
+
+:root {
+  --white: #f5f5f5;
+  --black: #111111;
+}
+
+/*** CSS Reset ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globalni stilovi */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: 10rem;
+  letter-spacing: 8px;
+}
+
+h2 {
+  padding: 4rem 0;
+  font-size: 5rem;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+h3 {
+  padding: 4rem 0;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Header sekcija */
+
+header {
+  width: 100%;
+  background-color: #f5f5f552;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* Navigacioni meni */
+
+header nav {
+  min-height: 5vh;
+  color: var(--black);
+}
+
+nav ul {
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  padding: 0 1rem;
+  display: flex;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+#logo a {
+  display: flex;
+}
+
+#logo img {
+  width: 5rem;
+  background-color: none;
+  border-radius: 50%;
+}
+
+nav a {
+  font-size: 1.3rem;
+}
+
+nav a:hover {
+  color: dodgerblue;
+}
+
+/* Main sekcija */
+
+main {
+  min-height: 100vh;
+  position: relative;
+  background-color: #f5f5f5a1;
+}
+
+/* Stilovi sekcije dobrodosli */
+
+main .dobrodosli {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* stilovi pozadine */
+  background-image: url(./img/pexels-pixabay-264950.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main h1 {
+  /* google fonts stilovi */
+  font-family: "Love Light", cursive;
+
+  color: var(--black);
+}
+
+.dobrodosli a {
+  position: absolute;
+  top: 80vh;
+  left: 42vw;
+  padding: 0.5rem 1rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  border: 1px solid var(--black);
+  border-radius: 20px;
+}
+
+main a:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+/* Stilovi sekcije brendova */
+
+#brendovi {
+  min-height: 100vh;
+  background-color: var(--white);
+  /* centriranje elemenata */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#brendovi ul {
+  /* centriranje elemenata */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#brendovi li {
+  /* centriranje elemenata */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#brendovi img {
+  /* width: 20vw; */
+  height: 45vh;
+}
+
+#brendovi a {
+  border: none;
+}
+
+#brendovi a:hover {
+  color: dodgerblue;
+}
+
+/* Sekcija kupovine */
+
+#kupovina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  /* stilovi pozadine */
+  background-image: url(./img/pexels-ron-lach-10537090.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#kupovina section {
+  width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#kupovina .login-sekcija {
+  background-color: #0080803f;
+}
+
+#kupovina .shopping-sekcija {
+  background-color: #8a2be226;
+}
+
+#kupovina form {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+#kupovina label {
+  color: var(--white);
+  font-weight: 600;
+}
+
+#kupovina input,
+#kupovina select {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+#kupovina input[type="submit"] {
+  background-color: dodgerblue;
+  color: var(--white);
+}
+
+#kupovina input[type="submit"]:hover {
+  background-color: greenyellow;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.pol {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pol input {
+  margin: auto 0;
+}
+
+/* Footer sekcija */
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+footer article {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h3 {
+  padding-bottom: 1rem;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer a:hover {
+  color: gold;
+}
+
+footer img {
+  border-radius: 50%;
+}
+
+.copyright {
+  border-top: 1px solid var(--white);
+}

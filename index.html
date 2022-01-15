@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Jovana Djordjevic" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Font links -->
+
+  <!-- Roboto Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@100&display=swap"
+    rel="stylesheet" />
+
+  <!-- Love Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet" />
+
+  CSS
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Parfimerija Djordjević</title>
+</head>
+
+<body>
+  <!-- Header sekcija-->
+  <header>
+    <!-- Navigacioni meni -->
+    <nav>
+      <ul>
+        <li id="logo">
+          <a href="#"><img src="./img/logo-02.jpg" alt="logo" /></a>
+        </li>
+        <li><a href="#brendovi">Brendovi</a></li>
+        <li><a href="#kupovina">Shopping / Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main sekcija-->
+  <main id="main">
+    <!-- Sekcija dobrodosli -->
+    <article class="dobrodosli">
+      <h1>Parfimerija Djordjević</h1>
+      <a href="#brendovi">Dobrodošli</a>
+    </article>
+
+    <!-- Sekcija brenodvi -->
+    <article id="brendovi">
+      <h2><em>Brendovi u ponudi</em></h2>
+      <ul>
+        <li>
+          <img src="./img/armani.jpg" alt="" />
+          <a href="https://www.armani.com/" target="_blank">Giorgio Armani</a>
+        </li>
+        <li>
+          <img src="./img/calvin-klein.jpg" alt="" />
+          <a href="https://www.calvinklein.us/" target="_blank">Calvni Klein</a>
+        </li>
+        <li>
+          <img src="./img/bruno-banani.jpg" alt="" />
+          <a href="https://www.brunobanani.com/" target="_blank">Bruno Banani</a>
+        </li>
+        <li>
+          <img src="./img/davidoff.jpg" alt="" />
+          <a href="https://www.zinodavidoff.com/" target="_blank">Davidoff</a>
+        </li>
+        <li>
+          <img src="./img/gucci.jpg" alt="" />
+          <a href="https://www.gucci.com/" target="_blank">Gucci</a>
+        </li>
+        <li>
+          <img src="./img/dolce&gabbana.jpg" alt="" />
+          <a href="https://www.dolcegabbanabeauty.com/perfumes/" target="_blank">Dolce & Gabbana</a>
+        </li>
+        <li>
+          <img src="./img/boss.jpg" alt="" />
+          <a href="https://www.hugoboss.com/boss-fragrances-men/" target="_blank">Boss</a>
+        </li>
+        <li>
+          <img src="./img/kenzo.jpg" alt="" />
+          <a href="https://www.kenzoparfums.com/" target="_blank">Kenzo</a>
+        </li>
+        <li>
+          <img src="./img/roberto-cavali.jpg" alt="" />
+          <a href="https://www.fragrantica.com/designers/Roberto-Cavalli.html" target="_blank">Roberto Cavalli</a>
+        </li>
+        <li>
+          <img src="./img/tom-ford.jpg" alt="" />
+          <a href="https://www.tomford.com/beauty/fragrance/" target="_blank">Tom Ford</a>
+        </li>
+        <li>
+          <img src="./img/versace.jpg" alt="" />
+          <a href="https://www.versace.com/us/en-us/women/accessories/fragrances/" target="_blank">Versace</a>
+        </li>
+      </ul>
+    </article>
+
+    <!-- Sekcije kupovine -->
+    <article id="kupovina">
+      <!-- Sekcija kupovine -->
+      <section class="shopping-sekcija">
+        <h3>Shopping</h3>
+        <form class="shopping-forma">
+          <!-- Izbor brenda parfema -->
+          <label for="izbor-parfema">Izaberite parfem:</label>
+          <select name="izbor-parfema">
+            <option value="armani">Giorgio Armani</option>
+            <option value="ck">Calvni Klein</option>
+            <option value="bb">Bruno Banani</option>
+            <option value="davidoff">Davidoff</option>
+            <option value="gucci">Gucci</option>
+            <option value="dg">Dolce & Gabbana</option>
+            <option value="boss">Boss</option>
+            <option value="kenzo">Kenzo</option>
+            <option value="rc">Roberto Cavalli</option>
+            <option value="tf">Tom Ford</option>
+            <option value="versace">Versace</option>
+          </select>
+
+          <!-- Izbor pola parfema -->
+          <label for="izbor-pola" style="border-top: 1px solid whitesmoke; padding-top: 2rem">Parfem za:</label>
+          <div class="pol">
+            <input type="radio" name="pol" value="zenski" />
+            <label for="zenski">Zene</label>
+          </div>
+          <div class="pol">
+            <input type="radio" name="pol" value="muski" />
+            <label for="muski">Muskarce</label>
+          </div>
+
+          <!-- Izbor snizenja -->
+          <label for="izbor-snizenja" style="border-top: 1px solid whitesmoke; padding-top: 2rem">Snizenje:</label>
+          <div class="pol">
+            <input type="checkbox" name="snizenje" value="snizenje" />
+            <label for="snizenje">Parfem na snizenju:</label>
+          </div>
+
+          <!-- Izbor godine proizvodnje porizvoda -->
+          <label for="godina-proizvodnje" style="border-top: 1px solid whitesmoke; padding-top: 2rem">Godina proizvodnje
+            parfema:</label>
+          <input type="month" />
+
+          <!-- Zapocni kupovinu -->
+          <label for="shopping-korpa">Zapocni kupovinu</label>
+          <input type="submit" value="Ubaci u kopru" />
+        </form>
+      </section>
+
+      <!-- Login sekcija -->
+      <section class="login-sekcija">
+        <h3>Login</h3>
+        <form class="login-forma">
+          <label for="ime">Ime:</label>
+          <input type="text" name="ime" />
+          <label for="lozinka">Lozinka:</label>
+          <input type="text" name="lozinka" />
+          <input type="submit" value="Login" />
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer sekcija -->
+  <footer>
+    <article>
+      <!-- Logo sekcija -->
+      <section>
+        <img src="./img/logo-02.jpg" alt="" />
+      </section>
+
+      <!-- Adresa i kontakt podaci -->
+      <section>
+        <h4>Kontakt podaci:</h4>
+        <address>
+          <ul>
+            <li>Kontakt osoba: Jovana Djordjevic</li>
+            <li>Adresa: Kraljevo</li>
+            <li>Email: djordjevicc.jovana@gmail.com</li>
+          </ul>
+        </address>
+      </section>
+
+      <!-- Sekcija referenci -->
+      <section>
+        <h4>Reference:</h4>
+        <ul>
+          <li>
+            <a href="https://www.w3schools.com/" target="_blank">W3schools - Learn to Code</a>
+          </li>
+          <li>
+            <a href="https://www.pexels.com/" target="_blank">Pexels - The best free stock photos, royalty free images &
+              videos shared by creators.</a>
+          </li>
+          <li>
+            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+          </li>
+          <li>
+            <a href="https://www.freelogo.me/" target="_blank">Free Logo Maker</a>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- Copyright sekcija -->
+    <article class="copyright">
+      <p>Copyright 2022 by Jovana Djordjević - "Parfimerija Djordjević"</p>
+    </article>
+  </footer>
+</body>
+
+</html>
