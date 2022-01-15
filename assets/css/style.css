@@ -1,18 +1,39 @@
 /**
-  * CSS CONTENT:
+  * CSS CONTENT
+  * -----------
   * 1. Variables
   * 2. Global Styles
   * 2.1 CSS Reset
+  * 3. Header Section
+  * 3.1 Main Navbar
+  * 4. Main Section
+  * 4.1 Landing Page Section
+  * 4.2 Brand Section
+  * 4.3 Shopping Section
+  * 5. Footer Section
   */
 
-/*** Variables ***/
+/*** 1. Variables ***/
 
 :root {
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --main-heading-font: "Love Light", cursive;
+
+  /* colors */
   --white: #f5f5f5;
   --black: #111111;
+  --transparent-white: #f5f5f552;
+  --blue: #1e90ff;
+  --green: #adff2f;
+  --transparent-green: #0080803f;
+  --transparent-purple: #8a2be226;
+  --yellow: #ffd700;
 }
 
-/*** CSS Reset ***/
+/*** 2. Global Styles ***/
+
+/*** 2.1 CSS Reset ***/
 
 * {
   margin: 0;
@@ -20,14 +41,12 @@
   box-sizing: border-box;
 }
 
-/* Globalni stilovi */
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.8;
   background-color: var(--white);
@@ -61,17 +80,17 @@ a {
   color: var(--black);
 }
 
-/* Header sekcija */
+/*** 3. Header Section ***/
 
 header {
   width: 100%;
-  background-color: #f5f5f552;
+  background-color: var(--transparent-white);
   position: fixed;
   top: 0;
   z-index: 1;
 }
 
-/* Navigacioni meni */
+/*** 3.1 Main Navbar ***/
 
 header nav {
   min-height: 5vh;
@@ -109,18 +128,18 @@ nav a {
 }
 
 nav a:hover {
-  color: dodgerblue;
+  color: var(--blue);
 }
 
-/* Main sekcija */
+/*** 4. Main Section ***/
 
 main {
   min-height: 100vh;
   position: relative;
-  background-color: #f5f5f5a1;
+  background-color: var(--transparent-white);
 }
 
-/* Stilovi sekcije dobrodosli */
+/*** 4.1 Landing Page Section ***/
 
 main .dobrodosli {
   height: 100vh;
@@ -130,7 +149,7 @@ main .dobrodosli {
   align-items: center;
   text-align: center;
 
-  /* stilovi pozadine */
+  /* Background Styles */
   background-image: url(../img/pexels-pixabay-264950.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +159,7 @@ main .dobrodosli {
 
 main h1 {
   /* google fonts stilovi */
-  font-family: "Love Light", cursive;
+  font-family: var(--main-heading-font);
   color: var(--black);
 }
 
@@ -160,7 +179,7 @@ main a:hover {
   border: 1px solid var(--white);
 }
 
-/* Stilovi sekcije brendova */
+/*** 4.2 Brand Section ***/
 
 #brendovi {
   min-height: 100vh;
@@ -200,10 +219,10 @@ main a:hover {
 }
 
 #brendovi a:hover {
-  color: dodgerblue;
+  color: var(--blue);
 }
 
-/* Sekcija kupovine */
+/*** 4.3 Shopping Section ***/
 
 #kupovina {
   min-height: 100vh;
@@ -226,11 +245,11 @@ main a:hover {
 }
 
 #kupovina .login-sekcija {
-  background-color: #0080803f;
+  background-color: var(--transparent-green);
 }
 
 #kupovina .shopping-sekcija {
-  background-color: #8a2be226;
+  background-color: var(--transparent-purple);
 }
 
 #kupovina form {
@@ -256,12 +275,12 @@ main a:hover {
 }
 
 #kupovina input[type="submit"] {
-  background-color: dodgerblue;
+  background-color: var(--blue);
   color: var(--white);
 }
 
 #kupovina input[type="submit"]:hover {
-  background-color: greenyellow;
+  background-color: var(--green);
   color: var(--black);
   cursor: pointer;
 }
@@ -276,7 +295,7 @@ main a:hover {
   margin: auto 0;
 }
 
-/* Footer sekcija */
+/*** 5. Footer Section ***/
 
 footer {
   background-color: var(--black);
@@ -298,7 +317,7 @@ footer a {
 }
 
 footer a:hover {
-  color: gold;
+  color: var(--yellow);
 }
 
 footer img {
