@@ -31,11 +31,12 @@
     <!-- Main Navbar -->
     <nav>
       <ul>
+        <!-- Logo -->
         <li id="logo">
           <a href="#"><img src="./assets/img/logo-02.jpg" alt="logo" /></a>
         </li>
-        <li><a href="#brendovi">Brendovi</a></li>
-        <li><a href="#kupovina">Shopping / Login</a></li>
+        <li><a href="#brands">Brendovi</a></li>
+        <li><a href="#shopping">Shopping / Login</a></li>
       </ul>
     </nav>
   </header>
@@ -43,13 +44,13 @@
   <!-- Main -->
   <main id="main">
     <!-- Landing Page -->
-    <article class="dobrodosli">
+    <article class="welcome">
       <h1>Parfimerija Djordjević</h1>
-      <a href="#brendovi">Dobrodošli</a>
+      <a href="#brands">Dobrodošli</a>
     </article>
 
     <!-- Brand -->
-    <article id="brendovi">
+    <article id="brands">
       <h2><em>Brendovi u ponudi</em></h2>
       <ul>
         <li>
@@ -100,14 +101,14 @@
     </article>
 
     <!-- Shopping -->
-    <article id="kupovina">
+    <article id="shopping">
       <!-- Shopping Form -->
-      <section class="shopping-sekcija">
+      <section>
         <h3>Shopping</h3>
-        <form class="shopping-forma">
-          <!-- Izbor brenda parfema -->
-          <label for="izbor-parfema">Izaberite parfem:</label>
-          <select name="izbor-parfema">
+        <form>
+          <!-- Brand Selection -->
+          <label for="perfume-brand">Izaberite parfem:</label>
+          <select name="perfume-brand">
             <option value="armani">Giorgio Armani</option>
             <option value="ck">Calvni Klein</option>
             <option value="bb">Bruno Banani</option>
@@ -121,43 +122,43 @@
             <option value="versace">Versace</option>
           </select>
 
-          <!-- Izbor pola parfema -->
-          <label for="izbor-pola" style="border-top: 1px solid whitesmoke; padding-top: 2rem">Parfem za:</label>
-          <div class="pol">
-            <input type="radio" name="pol" value="zenski" />
-            <label for="zenski">Zene</label>
+          <!-- Perfume Gender Selection -->
+          <label for="perfume-gender" class="shopping-label">Parfem za:</label>
+          <div class="perfume-gender">
+            <input type="radio" name="perfume-gender" value="female" />
+            <label for="female">Zene</label>
           </div>
-          <div class="pol">
-            <input type="radio" name="pol" value="muski" />
-            <label for="muski">Muskarce</label>
-          </div>
-
-          <!-- Izbor snizenja -->
-          <label for="izbor-snizenja" style="border-top: 1px solid whitesmoke; padding-top: 2rem">Snizenje:</label>
-          <div class="pol">
-            <input type="checkbox" name="snizenje" value="snizenje" />
-            <label for="snizenje">Parfem na snizenju:</label>
+          <div class="perfume-gender">
+            <input type="radio" name="perfume-gender" value="male" />
+            <label for="male">Muskarce</label>
           </div>
 
-          <!-- Izbor godine proizvodnje porizvoda -->
-          <label for="godina-proizvodnje" style="border-top: 1px solid whitesmoke; padding-top: 2rem">Godina proizvodnje
+          <!-- Sale -->
+          <label for="sale" class="shopping-label">Snizenje:</label>
+          <div class="perfume-gender">
+            <input type="checkbox" name="sale" value="sale" />
+            <label for="sale">Parfem na snizenju:</label>
+          </div>
+
+          <!-- Production Year -->
+          <label for="production-year" class="shopping-label">Godina proizvodnje
             parfema:</label>
           <input type="month" />
 
-          <!-- Zapocni kupovinu -->
-          <label for="shopping-korpa">Zapocni kupovinu</label>
+          <!-- Shopping Cart -->
+          <label for="shopping-cart">Dodaj u korpu</label>
           <input type="submit" value="Ubaci u kopru" />
         </form>
       </section>
 
       <!-- Login Form -->
-      <section class="login-sekcija">
+      <section class="login">
         <h3>Login</h3>
-        <form class="login-forma">
-          <label for="ime">Ime:</label>
-          <input type="text" name="ime" />
-          <label for="lozinka">Lozinka:</label>
-          <input type="text" name="lozinka" />
+        <form>
+          <label for="username">Ime:</label>
+          <input type="text" name="username" />
+          <label for="password">Lozinka:</label>
+          <input type="text" name="password" />
           <input type="submit" value="Login" />
         </form>
       </section>
@@ -179,7 +180,9 @@
           <ul>
             <li>Kontakt osoba: Jovana Djordjevic</li>
             <li>Adresa: Kraljevo</li>
-            <li>Email: djordjevicc.jovana@gmail.com</li>
+            <li>Email:
+              &#100;&#106;&#111;&#114;&#100;&#106;&#101;&#118;&#105;&#099;&#099;&#046;&#106;&#111;&#118;&#097;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+            </li>
           </ul>
         </address>
       </section>

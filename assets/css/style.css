@@ -98,7 +98,6 @@ header nav {
 }
 
 nav ul {
-  /* padding: 1rem; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -141,7 +140,7 @@ main {
 
 /*** 4.1 Landing Page Section ***/
 
-main .dobrodosli {
+main .welcome {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -158,12 +157,11 @@ main .dobrodosli {
 }
 
 main h1 {
-  /* google fonts stilovi */
   font-family: var(--main-heading-font);
   color: var(--black);
 }
 
-.dobrodosli a {
+.welcome a {
   position: absolute;
   top: 80vh;
   left: 42vw;
@@ -179,20 +177,18 @@ main a:hover {
   border: 1px solid var(--white);
 }
 
-/*** 4.2 Brand Section ***/
+/*** 4.2 Brands Section ***/
 
-#brendovi {
+#brands {
   min-height: 100vh;
   background-color: var(--white);
-  /* centriranje elemenata */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#brendovi ul {
-  /* centriranje elemenata */
+#brands ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -200,8 +196,7 @@ main a:hover {
   gap: 3rem;
 }
 
-#brendovi li {
-  /* centriranje elemenata */
+#brands li {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -209,27 +204,26 @@ main a:hover {
   gap: 1rem;
 }
 
-#brendovi img {
-  /* width: 20vw; */
+#brands img {
   height: 45vh;
 }
 
-#brendovi a {
+#brands a {
   border: none;
 }
 
-#brendovi a:hover {
+#brands a:hover {
   color: var(--blue);
 }
 
 /*** 4.3 Shopping Section ***/
 
-#kupovina {
+#shopping {
   min-height: 100vh;
   display: flex;
   justify-content: center;
 
-  /* stilovi pozadine */
+  /* Background Styles */
   background-image: url(../img/pexels-ron-lach-10537090.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -237,22 +231,22 @@ main a:hover {
   background-attachment: fixed;
 }
 
-#kupovina section {
+#shopping section {
   width: 50vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-#kupovina .login-sekcija {
+#shopping .login {
   background-color: var(--transparent-green);
 }
 
-#kupovina .shopping-sekcija {
+#shopping .shopping {
   background-color: var(--transparent-purple);
 }
 
-#kupovina form {
+#shopping form {
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -260,13 +254,18 @@ main a:hover {
   font-size: 1.6rem;
 }
 
-#kupovina label {
+#shopping label {
   color: var(--white);
   font-weight: 600;
 }
 
-#kupovina input,
-#kupovina select {
+#shopping .shopping-label {
+  border-top: 1px solid var(--white);
+  padding-top: 2rem;
+}
+
+#shopping input,
+#shopping select {
   margin-bottom: 1rem;
   padding: 0.25rem;
   border: none;
@@ -274,24 +273,24 @@ main a:hover {
   font-size: 1.6rem;
 }
 
-#kupovina input[type="submit"] {
+#shopping input[type="submit"] {
   background-color: var(--blue);
   color: var(--white);
 }
 
-#kupovina input[type="submit"]:hover {
+#shopping input[type="submit"]:hover {
   background-color: var(--green);
   color: var(--black);
   cursor: pointer;
 }
 
-.pol {
+.perfume-gender {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.pol input {
+.perfume-gender input {
   margin: auto 0;
 }
 
