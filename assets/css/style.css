@@ -50,6 +50,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   background-color: var(--white);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -176,7 +177,7 @@ nav li {
 
 #logo img {
   width: 5rem;
-  background-color: none;
+  /* background-color: none; */
   border-radius: 50%;
 }
 
@@ -284,10 +285,10 @@ main a:hover {
 }
 
 #brands ul {
-  width: 100vw;
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 3rem;
 }
@@ -417,9 +418,11 @@ footer {
 }
 
 footer article {
-  padding: 1rem 0;
+  padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 footer h3 {
