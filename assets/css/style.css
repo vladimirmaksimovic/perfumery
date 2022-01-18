@@ -202,20 +202,32 @@ nav a {
 }
 
 @media only screen and (max-width: 760px) {
-  nav a {
-    font-size: 1.2rem;
+  nav li {
+    padding: 0 1.5rem 0 0.5rem;
   }
-}
 
-@media only screen and (max-width: 670px) {
   nav a {
     font-size: 1.1rem;
   }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 670px) {
+  nav li {
+    padding: 0 1rem 0 0.5rem;
+  }
+
   nav a {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  nav li {
+    padding: 0.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
   }
 }
 
@@ -263,6 +275,10 @@ main h1 {
   letter-spacing: 2px;
   border: 1px solid var(--black);
   border-radius: 20px;
+}
+
+#welcome a:hover {
+  border: 1px solid var(--white);
 }
 
 @media only screen and (max-width: 580px) {
