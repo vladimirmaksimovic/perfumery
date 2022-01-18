@@ -377,7 +377,8 @@ main a:hover {
 }
 
 #shopping input,
-#shopping select {
+#shopping select,
+#shopping button {
   margin-bottom: 1rem;
   padding: 0.25rem;
   border: none;
@@ -385,11 +386,24 @@ main a:hover {
   font-size: 1.6rem;
 }
 
+/* #shopping input[type="submit"] {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+#shopping input[type="submit"]:hover {
+  background-color: var(--green);
+  color: var(--black);
+  cursor: pointer;
+} */
+
+#shopping button[type="submit"],
 #shopping input[type="submit"] {
   background-color: var(--blue);
   color: var(--white);
 }
 
+#shopping button[type="submit"]:hover,
 #shopping input[type="submit"]:hover {
   background-color: var(--green);
   color: var(--black);
